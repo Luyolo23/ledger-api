@@ -14,7 +14,7 @@ import java.util.UUID;
 public interface AccountRepository extends JpaRepository<Account, UUID> {
     List<Account> findAllByUser_IdOrderByCreatedAtDesc(UUID userId);
 
-    Optional<Account> findByIdAndUser_id(UUID id, UUID userId);
+    Optional<Account> findByIdAndUser_Id(UUID id, UUID userId);
 
     @Lock(LockModeType.PESSIMISTIC_WRITE)
     @Query("select a from Account a where a.id =:id")

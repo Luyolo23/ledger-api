@@ -1,7 +1,7 @@
 package com.example.ledger_api.config;
 
-import com.example.ledger.exception.ErrorResponse;
-import com.example.ledger.security.JwtAuthenticationFilter;
+import com.example.ledger_api.exception.ErrorResponse;
+import com.example.ledger_api.security.JwtAuthenticationFilter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.context.annotation.Bean;
